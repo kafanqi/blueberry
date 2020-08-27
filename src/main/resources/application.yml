@@ -61,8 +61,6 @@ spring:
     password: System966779
     protocol: smtp
     default-encoding: UTF-8
-#  resources:
-#    static-locations: classpath:/resources/, classpath:/static/ ,classpath:/templates/
 
   jackson:
     time-zone: GMT+8
