@@ -58,7 +58,7 @@ spring:
   mail:
     host: smtp.mxhichina.com
     username: system@jiafly.com
-    password: System966779
+    password: 111111
     protocol: smtp
     default-encoding: UTF-8
 
