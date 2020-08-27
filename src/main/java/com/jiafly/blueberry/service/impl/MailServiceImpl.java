@@ -29,7 +29,7 @@ public class MailServiceImpl implements MailService {
         map.put("verifyCode","957587");
         map.put("currentTime", DateUtils.getCurrentDatePattern(DateUtils.DATE_PATTERN_LONG));
         try {
-            mailUtils.sendTemplateMail("system@jiafly.com", to, "欢迎注册Jiafly", "mailVerifyCode", map);
+            mailUtils.sendTemplateMail("system@jiafly.com", to, "JIAFly验证码", "mailVerifyCode", map);
         } catch (Exception e) {
             e.printStackTrace();
         }
