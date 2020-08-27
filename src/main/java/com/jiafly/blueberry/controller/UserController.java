@@ -8,7 +8,6 @@ import com.jiafly.blueberry.domain.dto.UserUpdateCommand;
 import com.jiafly.blueberry.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -17,7 +16,6 @@ import java.util.List;
 /**
  * @author liuyi
  */
-@Slf4j
 @RestController
 @RequestMapping(path = "/user")
 @Api(tags = "用户模块")
