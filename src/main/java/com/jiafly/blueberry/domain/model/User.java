@@ -25,7 +25,6 @@ public class User {
      * 用户名
      */
     private String username;
-
     private String password;
     private String nickname;
     private String headImage;
@@ -37,6 +36,9 @@ public class User {
     private String country;
     private String openId;
     private String unionId;
+    /**
+     * 用户状态 10:正常，20:冻结，30:未激活
+     */
     private Integer status;
     private Date createTime;
     private Date updateTime;
@@ -57,7 +59,7 @@ public class User {
         this.country = country;
         this.openId = openId;
         this.unionId = unionId;
-        this.status = 20;
+        this.status = 30;
         this.createTime = new Date();
         this.updateTime = new Date();
     }
