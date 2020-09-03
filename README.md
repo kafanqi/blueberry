@@ -5,16 +5,18 @@
 - JDK14
 - 集成
     + Spring Boot Starter Web
-    + Lombok(可能不会使用)
+    + Lombok(已移除)
     + MySQL connector java
     + Druid 
     + MyBaits
-    + Thymeleaf(模板引擎)
     + Swagger2 3.0.0
     + Twitter 雪花ID生成算法
     + Lettuce Redis
     + Spring Boot Mail
-    + 
+    + Thymeleaf(模板引擎)
+    + restTemplate
+    + 全局异常处理
+    + 全局跨域处理（真正一般使用 nginx）
 
 ### 1.集成 Druid 数据库连接池
 
