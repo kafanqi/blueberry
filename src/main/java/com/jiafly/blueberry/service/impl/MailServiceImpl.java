@@ -1,6 +1,6 @@
 package com.jiafly.blueberry.service.impl;
 
-import com.jiafly.blueberry.common.exception.ClientException;
+import com.jiafly.blueberry.common.exception.BizException;
 import com.jiafly.blueberry.common.exception.ExceptionEnum;
 import com.jiafly.blueberry.common.utils.DateUtils;
 import com.jiafly.blueberry.common.utils.MailUtils;
@@ -38,7 +38,7 @@ public class MailServiceImpl implements MailService {
             mailUtils.sendTemplateMail("system@jiafly.com", to, "JIAFly验证码", "mail/mailVerifyCode", map);
         } catch (Exception e) {
             logger.error("发送邮件异常，异常信息：{}，收件人：{}", e.getMessage(), to);
-            throw new ClientException(ExceptionEnum.SEND_MAIL_ERROR);
+            throw new BizException(ExceptionEnum.SEND_MAIL_ERROR);
         }
         return true;
     }
