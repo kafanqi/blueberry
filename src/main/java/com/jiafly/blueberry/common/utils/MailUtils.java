@@ -74,11 +74,15 @@ public class MailUtils {
      * @param contentMap   contentMap
      * @throws Exception e
      */
-    public void sendTemplateMail(String from, String to, String subject, String templateName, Map<String, Object> contentMap) throws Exception {
-        Context context = new Context();
-        context.setVariables(contentMap);
-        String mailTemplate = templateEngine.process(templateName, context);
-        sendHtmlMail(from, to, subject, mailTemplate);
+    public void sendTemplateMail(String from, String to, String subject, String templateName, Map<String, Object> contentMap) {
+        try {
+            Context context = new Context();
+            context.setVariables(contentMap);
+            String mailTemplate = templateEngine.process(templateName, context);
+            sendHtmlMail(from, to, subject, mailTemplate);
+        } catch (Exception exception) {
+
+        }
     }
 
     /**

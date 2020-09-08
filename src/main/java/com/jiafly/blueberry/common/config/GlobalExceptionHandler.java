@@ -1,6 +1,5 @@
 package com.jiafly.blueberry.common.config;
 
-import com.jiafly.blueberry.common.exception.ClientException;
 import com.jiafly.blueberry.common.exception.ResultBody;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,11 +29,11 @@ public class GlobalExceptionHandler {
         return ResultBody.error();
     }
 
-    @ResponseBody
-    @ExceptionHandler(value = ClientException.class)
-    public ResultBody clientExceptionHandler(HttpServletRequest request, HttpServletResponse response, ClientException e) {
-        logger.error("ClientException ===>" + e.getMessage());
-        return ResultBody.error(e.getCode(), e.getMessage());
-    }
+//    @ResponseBody
+//    @ExceptionHandler(value = ClientException.class)
+//    public ResultBody clientExceptionHandler(HttpServletRequest request, HttpServletResponse response, ClientException e) {
+//        logger.error("ClientException ===>" + e.getMessage());
+//        return ResultBody.error(e.getCode(), e.getMessage());
+//    }
 
 }
