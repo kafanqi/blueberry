@@ -1,11 +1,11 @@
 # Blueberry 蓝莓
-这是一个小程序后端项目，取名`jiafly.Blueberry(我家的蓝莓)` ，这将成为一个`传统`。(`最终你将会明白什么是传统！！`)
+`jiafly.blueberry(我家的蓝莓)` 。
 
 ## 项目环境
 - JDK14
 - 集成
     + Spring Boot Starter Web
-    + Lombok(已移除)
+    + Lombok(已移除，建议不用)
     + MySQL connector java
     + Druid 
     + MyBaits
